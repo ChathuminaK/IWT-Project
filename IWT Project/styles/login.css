@@ -1,0 +1,245 @@
+/*This is the CSS file for the login page. 
+It contains styles for the login form.*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    font-size: 14px;
+}
+
+body {/*styles and decoration for body part of login page */
+
+    background-repeat: no-repeat;
+    background-color: white;
+    margin: 0;
+    display: grid;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+.loginbody {
+    
+    background-image:url(../images/back8.jpg) ;
+    background-size: device-width; device-height;
+    background-repeat: no-repeat;
+    background-color: cadetblue;
+    
+}
+
+.login {
+    /*styles and decoration for login box */
+    transform: translate(100px, 200px);
+    width: 600px;
+    height: 600px;
+    padding: 80px 40px;
+    box-sizing: border-box;
+   
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-bottom: 300px;
+
+}
+
+h2 {
+    margin: 0;
+    color: #0c0277;
+
+}
+
+.social{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    margin: 10px 0;
+    padding: 20px 0;  
+}
+
+.social-button1{/*login wit face book button */
+    padding: 10px 0;
+    border:rgb(23, 116, 222) ;
+    height: 40px;
+    width: 240px;
+    text-align: center;
+    background-color:rgb(216, 18, 18);
+    border-radius: 5px ;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+	background-color: rgb(23, 116, 222);
+    cursor: pointer;
+}
+.social-button1 a{
+	text-decoration: none;
+	color: white;
+}
+.social-button2{/*login with google button */
+	padding: 10px 0;
+    height: 40px;
+    width: 240px;
+    text-align: center;
+    background-color:rgb(117, 59, 59);
+    border-radius: 5px ;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+	background-color: #ef4848f6;
+    border:#e9e8f0 ;
+    cursor: pointer;
+
+}
+.social-button2 a{
+	text-decoration: none;
+	color: white;
+
+}
+/*this style indicates if user input incorrect information or blanks, this link to javascript */
+.error{
+    color: red;
+    font-size: 16px;
+    margin-top: 5px;
+
+}
+.login-inputs.success input{/*this style indicates user input correct details in to the form*/
+    border-color: rgb(23, 234, 23);
+}
+.login-inputs.error input{
+    border-color: red;
+}
+
+.check{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.check label{
+    display: flex;
+}
+
+.check label span{
+    padding-top: 3px;
+    color: #06060b;
+    font-weight: 200;
+    font-size: 14px;
+    padding-left: 5px;
+   
+}
+
+.check a {/*forgot password styles  */
+
+    font-weight: bold;
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #505051;
+    font-size: 0.9rem;
+    padding-top: 5px;
+}
+
+.check a:hover{
+    color: #0e1010;
+}
+.login label {
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    color: #fff;
+
+}
+
+
+.login input {
+    width: 100%;
+}
+.login-inputs{
+    margin-top: 20px ;
+    margin-bottom: 10px;
+}
+.login-inputs input {
+    padding: 0 10px;
+    border: none;
+    border: 1px solid #0c0277;
+    margin-top: 10px;
+    background:white;
+    outline: none;
+    height: 50px;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: #a990f6;
+    opacity: 1;
+}
+.login-btn[type="submit"] {/*login button decoration and styles */
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    background: rgb(255, 106, 0);
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.register-btn[type="button"]{/*register button styles */
+    border: 3px solid blue;
+    outline: none;
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    background: #fff;
+    color: #fff;
+    margin-top: 5px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.register-btn a { /*register button a tag */
+    text-decoration: none;
+    color :blue;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+.login-btn:hover {/*login button hover */
+    background: #7575f5;
+    color: #262626;
+
+}
+
+.register-btn:hover {/*register button hover */
+    background: #77f37f;
+    color: #262626;
+}
+.register-btn a:hover {/*regiter button a tag hover */
+    background: #DCEEF2;
+    color: #262626;
+}
+
+.line {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding: 0 2rem;
+    background-color: rgb(9, 112, 153);
+}
+
+@media screen and (max-width: 1085px) {
+    .footer-details {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer-details {
+        width: 100%;
+    }
+}

@@ -1,0 +1,149 @@
+<?php
+include("config2.php");
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $name=$_POST['name'];
+    $dob=$_POST['dob'];
+	$nickname=$_POST['nickname'];
+	$country=$_POST['country'];
+	$address1=$_POST['address1'];
+    $address2=$_POST['address2'];
+
+    /*  Insert the user into the database*/ 
+    $sql = "INSERT INTO person (name,dob,nickname,country,address1,address2) VALUES ('$name','$dob','$nickname','$country','$address1','$address2')";
+
+    if (mysqli_query($conn, $sql)) {
+        echo "Successfully Submit";
+        header("location:./userAccount.php"); 
+    } 
+    else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+}
+
+mysqli_close($conn);
+?>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Account | Stellar Homes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" type="text/css" href="styles/style1.css">
+
+  <script>
+  function ScrollTop() {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  }
+  </script>
+
+</head>
+<body>
+
+    <header class="header">
+        <input type="checkbox" name="" id="chk1">
+
+        <div><img src="images/StellarH_Logo_New.jpg" alt="Logo" class="logo"></div>
+
+        <ul class="test">
+          <li><a href="Homepage.html">Home</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="ListingPageSample.html">Apartments</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="Contact.html">Contact Us</a></li>
+          <li><a href="AccountSettings.html">Account</a></li>
+        </ul>
+
+        <div class="search-box">
+          <form action="">
+              <input type="text" name="search" id ="srch" placeholder="Search Apartments...">
+              <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+    </header>
+
+<div class="banner">
+  <div class="container1">
+    <div class="seller-box">
+      <h2>User</h2><br><br>
+      <ul>
+        <li><a href="AccountSettings.html">Account Settings</a></li>
+        <li><a href="UserAccountAdd.html">Personal Information</a></li>
+        <li><a href="#">Upgrade Your Plan</a></li>
+        <li><a href="#">Payment Settings</a></li>
+      </ul>
+    </div>
+    <div class="personal-info">
+      <h1>Personal Information</h1><hr>
+      <form id="personal-info-form" method="post" action="php/AccountAdd.php">
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" class="instyle1" required>
+        </div><hr>
+        <div class="form-group">
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" class="instyle1" required>
+        </div><hr>
+        <div class="form-group">
+          <label for="nickname">Seller Nickname:</label>
+          <input type="text" id="nickname" name="nickname" class="instyle1" required>
+        </div><hr>
+        <div class="form-group">
+          <label for="country">Country/Region:</label>
+          <input type="text" id="country" name="country" class="instyle1" required>
+        </div><hr>
+        <div class="form-group">
+          <label for="address1">Address Line 1:</label>
+          <input type="text" id="address1" name="address1" class="instyle1" required>
+        </div><hr>
+        <div class="form-group">
+          <label for="address2">Address Line 2:</label>
+          <input type="text" id="address2" name="address2" class="instyle1">
+        </div><hr><br><br>
+        <div class="form-group">
+          <button type="submit" name="submit" class="btnsubmit1" onclick="ScrollTop()">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+    <footer class="footer" position: fixed;>       
+        <div class="inner-footer">
+            <div class="footer-container">
+                <div class="email">
+                    <input type="email" placeholder="Enter Your Email">
+                   
+                    <button type="submit">Subscribe</button>
+                </div>
+            </div>
+            <div class="social-links">
+                
+                <ul>
+                    <li class="social-items"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="social-items"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="social-items"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="social-items"><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                    <li class="social-items"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div><br>
+
+            <div class="quick-links">
+                <ul>
+                    <li class="quick-items"><a href="#">FAQs</a></li>
+                    <li class="quick-items"><a href="Contact.html">Contact Us</a></li>
+                    <li class="quick-items"><a href="#">Terms and conditions</a></li>
+                    <li class="quick-items"><a href="#">Privacy and cookies policy</a></li>
+                </ul>
+            </div>
+            <p class="footerBottom">&copy2023 Stellar Homes LLC, All Rights Reserved</p>
+        </div>
+    </footer>
+ 
+</body>
+</html>

@@ -1,0 +1,54 @@
+.my-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+    width: 80%;
+    margin-bottom: 100px;
+  }
+  
+  .my-profile-icon {
+    font-size: 100px; 
+    color: #3a2424; 
+  }
+  
+  .my-content {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .my-content h1 {
+    color: #623535;
+    margin-bottom: 10px;
+  }
+  
+  .my-content p {
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .my-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .my-edit-button,
+  .my-delete-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .my-edit-button {
+    background-color: #108971;
+    color: #fff;
+  }
+  
+  .my-delete-button {
+    background-color: #e15c4d;
+    color: #fff;
+  }
+  

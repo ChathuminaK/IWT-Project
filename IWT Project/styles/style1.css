@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+  }
+  
+  .container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #a1e6f2;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  .banner{
+    padding-top: 140px;
+    padding-bottom: 60px;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('../images/backg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+  
+  .seller-box {
+    width: 200px;
+    padding: 20px;
+    border-right: 1px solid #c8b7b7;
+  }
+  
+  .seller-box h2 {
+    text-align: center;
+    color: #6b4949;
+    margin-bottom: 20px;
+  }
+  
+  .seller-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .seller-box ul li {
+    margin-bottom: 10px;
+  }
+  
+  .seller-box ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #6a4b4b;
+    border: 1px solid #237432;
+    border-radius: 10px;
+    transition: background-color 0.4s;
+  }
+  
+  .seller-box ul li a:hover {
+    background-color: #438fbe;
+  }
+  
+  
+  .personal-info {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .personal-info h1 {
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .instyle1 {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #a79393;
+    border-radius: 12px;
+  }
+  
+  .btnsubmit1 {
+    background-color: #25a188;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .btnsubmit1:hover {
+    background-color: #348de7;
+  }
+  
+  

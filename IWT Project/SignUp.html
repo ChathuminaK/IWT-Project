@@ -1,0 +1,229 @@
+<!-- start of signup page-->
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- titlte of the page-->
+	<title>Sign Up | Stellar Homes</title>
+	<!-- in here CSS and Javascript are linked-->
+	<link rel="stylesheet" href="styles/signUp.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/footernew.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="styles/signup.js" defer></script>
+	
+</head>
+
+<body>
+	<!-- header of the page-->
+    <header class="header">
+        <input type="checkbox" name="" id="chk1">
+
+        <div><img src="images/StellarH_Logo_New.jpg" alt="Logo" class="logo"></div>
+
+        <ul class="test">
+          <li><a href="Homepage.html">Home</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="ListingPageSample.html">Apartments</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="Contact.html">Contact Us</a></li>
+          <li><a href="AccountSettings.html">Account</a></li>
+        </ul>
+
+        <div class="search-box">
+          <form action="">
+              <input type="text" name="search" id ="srch" placeholder="Search Apartments...">
+              <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+    </header>
+
+	<div class="reg-body">
+		<div class="registerbox">
+
+			<h2>Register Here</h2>
+			<!--  buttons for register with google or facebook-->
+			<div class="social">
+				<button class="social-button1" onclick="location.href='https://www.facebook.com/'">
+					<a href="https://www.facebook.com/">Facebook</a>
+				</button>
+				<button class="social-button2" onclick="location.href='https://www.gmail.com/'">
+					<a  href="https://www.gmail.com/">Google</a>
+				</button>
+				
+				
+
+			</div>
+				
+		
+			<!-- start of the form and here php was linked-->
+			<form  action="php/register.php" method="post" id="form" name="form">
+				<!-- reg-inputs are classes of inputs there are 5 inputs here to get the details from the user-->
+                <div class="reg-inputs">
+					<!-- input bx for Account type-->
+						<input type="text" placeholder="Account Type" name="Acctype" id="Acctype">
+						<div class="error"></div>
+					</div>
+					
+					<div class="reg-inputs">
+						<!--input box for name-->
+						<input type="text" placeholder="Enter Name" name="uname" id="uname">
+						<div class="error"></div>
+					</div>
+					<div class="reg-inputs">
+						<!-- input box for email-->
+				   		<input type="text" placeholder="Enter E-mail" name="email" id="email">
+				   		<div class="error"></div>
+					</div>
+					<div class="reg-inputs">
+						<!-- input box for passsword-->
+                   		<input type="password" placeholder="Password" name="ppwd" id="password">
+				   		<div class="error"></div>
+					</div>
+					<div class="reg-inputs">
+						<!-- confirmation of password-->
+                   		<input type="password" placeholder="Confirm Password" name="cppwd" id="cpassword">
+						<div class="error"></div>
+				   	</div>
+
+				<div class="check">
+					<label>
+						<input  type="checkbox">
+						<span>Rememberme</span>
+					</label>
+					<!-- link for forgot password page-->
+					<a href="#"> Forget Password</a>
+				</div>
+				
+				<!--  register button -->
+				<button class="register-btn" type="submit" value="submit" name="submit">Click To Register</button>
+				<!--   navigation for login page -->
+				<div class="login page">
+					<h5> Already have an account?</h5>
+					<!-- login button when click this button user goes to login page-->
+					<button class="login-btn" onclick="location.href='login.html'" type="button"> <a href="login.html">Login Here </a> </button>
+				</div>
+				
+			
+		
+			<!-- end of form tag-->
+			</form>
+		    
+        
+		
+			
+
+        </div>
+
+	</div>
+
+
+
+<!-- footer part of the page-->
+	<footer style="background: #99ccff; margin: 0; padding: 0;">
+
+		<div class="footer">
+			<div class="footer-in">
+
+
+				<div class="footer-details">
+					<div class="footer-para">
+						<h2 style="font-family: Tahoma; font-size: 24px; color: navy; margin-top: -15px;">We are for You</h2>
+					</div><!-- in here a short information about stellar homes-->
+					<p style="font-family: Tahoma; font-size: 14px;">Stellar Homes is an online apartment sales system that simplifies the process of finding and purchasing your ideal home. 
+						Our platform offers a wide range of apartments, complete with detailed listings and virtual tours. 
+						With secure transactions and user-friendly features, Stellar Homes makes property sales effortless and convenient.
+					</p>
+				</div>
+				<!-- quick links of the page-->
+				<div class="footer-details">
+					<h2 class="f-head">Quick Links</h2>
+					<div class="footer-border"></div>
+					<ul>
+						<a href="#">
+							<li style="font-family: Tahoma; font-size: 15px;">Home</li>
+						</a>
+						<a href="#">
+							<li style="font-family: Tahoma; font-size: 15px;">Contact Us</li>
+						</a>
+						<a href="#">
+							<li style="font-family: Tahoma; font-size: 15px;">About Us</li>
+						</a>
+					</ul>
+				</div>
+
+				<div class="footer-details">
+					<h2 class="f-head">Legal</h2>
+					<div class="footer-border"></div>
+					<ul>
+						<a href="#">
+							<li style="font-family: Tahoma; font-size: 15px;">Privacy Policy</li>
+						</a>
+						<a href="#">
+							<li style="font-family: Tahoma; font-size: 15px;">Terms and Conditions</li>
+						</a>
+						<a href="#">
+							<li style="font-family: Tahoma; font-size: 15px;">Contract</li>
+						</a>
+					</ul>
+				</div>
+				<!-- end of quick links-->
+
+				<div class="footer-details">
+					<h2 class="f-head">Contact US</h2>
+					<div class="footer-border"></div>
+
+					<div class="footer-contact">
+						<!-- details of Stellar Homes-->
+						
+							<span>No.20, Staple Street, Colombo 04.</span>
+							<span>0111256234 / 0771256234</span>
+							<span>stellarhomes_support@sltnet.lk</span>
+						
+					</div>
+
+				</div>
+
+
+				<div class="footer-bottom">
+					<ul>
+						<!-- social media links of Stellar Homes-->
+						<div class="footer-social">
+							<a href="https://www.facebook.com" style="margin-left: -10px;"><img src="images/facebook1.png" height="25"
+									width="25"></a>
+							<a href="https://www.instagram.com"><img src="images/insta.jpeg" height="25"
+									width="25"></a>
+							<a href="https://www.linkedin.com"><img src="images/linkedin.png" height="25"
+									width="25"></a>
+							<a href="https://twitter.com"><img src="images/twitter2.png" height="25" width="25"></a>
+							<a href="https://accounts.snapchat.com"><img src="images/snapchat.png" height="25"
+									width="25"></a>
+							<a href="https://www.whatsapp.com"><img src="images/whatsapp.jpeg" height="25"
+									width="25"></a>
+						</div>
+					</ul>
+
+					<h1> Copyright 2023 &copy;Stellar Homes LLC. All Rights Reserved.</h1>
+
+				</div>
+
+
+
+			</div>
+		</div>
+
+
+
+<!-- end of footer part-->
+	</footer>
+
+
+
+
+<!-- end of body html-->
+</body>
+<!-- end of the signup page-->
+</html>

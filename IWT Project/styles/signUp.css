@@ -1,0 +1,289 @@
+/*This is the CSS file for the SignUp page. 
+It contains styles for the registration form and its elements, as well as the header, social buttons, and footer.*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    font-size: 14px;
+}
+
+body { /* style for body of signup.html*/
+    
+    background-repeat: no-repeat;
+    background-color: white;
+    margin: 0;
+    display: grid;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+.reg-body {
+
+    /* back ground image for register page body*/
+    background-image: url(../images/back23.jpg);
+    background-size: device-width device-height;
+    background-repeat: no-repeat;
+    display: flex;
+    
+}
+
+.registerbox {
+    /* styles and adjustment of register box*/
+    transform: translate(100px, 200px);
+    width: 600px;
+    height: 770px;
+    padding: 80px 40px;
+    box-sizing: border-box;
+
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-bottom: 300px;
+
+}
+
+ h2 {
+    margin: 0;
+    color: #0c0277;
+
+}
+
+.social{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    margin: 10px 0;
+    padding: 20px 0;
+   
+   
+}
+.social-button1{
+    /* buttons decorations for register with*/
+    padding: 10px 0;
+    border:rgb(23, 116, 222) ;
+    height: 40px;
+    width: 240px;
+    text-align: center;
+    background-color:rgb(216, 18, 18);
+    border-radius: 5px ;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+	background-color: rgb(23, 116, 222);
+    cursor: pointer;
+	
+
+}
+.social-button1 a{
+    /* facebook a tag*/
+	text-decoration: none;
+	color: white;
+}
+.social-button2{
+    /* buttons decorations for register with*/
+	padding: 10px 0;
+   
+    height: 40px;
+    width: 240px;
+    text-align: center;
+    background-color:rgb(117, 59, 59);
+    border-radius: 5px ;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+	background-color: #e9e8f0;
+    background-color: #ef4848f6;
+    cursor: pointer;
+    border:#ef4848f6 ;
+
+}
+.social-button2 a{
+    /* google button a tag decoration*/
+	text-decoration: none;
+	color: white;
+}
+
+.error{
+    /* this style indicate if user input incorrect inforation or blanks */
+    color: red;
+    font-size: 16px;
+    margin-top: 4px;
+
+}
+.reg-inputs.success input{
+    /* this style indicate if user input corrcet information */
+    border-color: rgb(23, 234, 23);
+    border-width: 1.4px;
+}
+.reg-inputs.error input{
+    border-color: red;
+    border-width: 1.3px;
+}
+
+.check{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.check label{
+    display: flex;
+}
+
+.check label span{
+    /* style check box*/
+    padding-top: 3px;
+    color: #505051;
+    font-weight: 200;
+    font-size: 14px;
+    padding-left: 5px;
+   
+}
+.check label input{
+    padding: 0;
+    margin: 0;
+    color: red;
+}
+
+
+
+.check a {
+    /* style for a tag */
+
+    font-weight: bold;
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #505051;
+    font-size: 0.9rem;
+    padding-top: 5px;
+}
+
+.check a:hover{
+    color: #8FCBD9;
+}
+
+
+.registerbox label {
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    color: #fff;
+
+}
+
+
+.registerbox input {
+    width: 100%;
+  
+
+
+}
+.reg-inputs{
+    margin-top: 10px ;
+    margin-bottom: 10px;
+}
+.reg-inputs input {
+    /* styles for registration inputs */
+    padding: 0 10px;
+    border: none;
+    border: 1px solid #0c0277;
+    margin-top: 10px;
+    background:white;
+    outline: none;
+    height: 45px;
+    font-size: 16px;
+
+
+
+
+}
+
+input::placeholder {
+    color: #a990f6;
+    opacity: 1;
+}
+
+
+
+.register-btn[type="submit"] {
+    /* decorations of register button */
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    background: rgb(255, 106, 0);
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.login-btn[type="button"] {
+    /* decorations of login button */
+    border: 3px solid blue;
+    outline: none;
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    background: #fff;
+    color: #fff;
+    margin-top: 5px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.login-btn a {
+    /* decorations of login button a tag */
+    text-decoration: none;
+    color :blue;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+.register-btn:hover {
+    background: #8ef89e;
+    color: #262626;
+
+}
+
+.login-btn:hover {
+    /* login button hover */
+    background: #DCEEF2;
+    color: #262626;
+}
+.login-btn a:hover {
+    background: #DCEEF2;
+    color: #262626;
+}
+
+.line {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding: 0 2rem;
+    background-color: rgb(9, 112, 153);
+}
+
+
+@media screen and (max-width: 1085px) {
+    .footer-details {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer-details {
+        width: 100%;
+    }
+}
